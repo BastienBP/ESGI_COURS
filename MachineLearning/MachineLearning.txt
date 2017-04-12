@@ -1,0 +1,12 @@
+Dispatcher les tâches à réaliser en parallèle. 
+-> Recherche d'un dataset: trouver 2 datasets. Un dataset simple (ex: dataset titanic sur kaggle, flower iris) Un autre qui va nous intéresser.
+	Eviter les datasets avec données symboliques. Datasets numérique. 
+-> Réaliser une étude de dataset (on a récupéré les données comme ça, on trouve telle ou telle feature, on tente de trouver cela, etc...)
+	Présentation du dataset en soutenance (2 minutes de slide en soutenance)
+-> Les études donneront une expérimentation générale. (avec dans un premier temps MLStudio, Matematica, Tensorflow... etc)
+	Présentation de la partie expérimentation sur le dataset (j'essaye d'expliquer pourquoi je teste cela...)
+-> Faire en sorte que le modèle linéaire, la régression, la project de mes données, MLP classique et Régression = attaquer le dataset avec cela. 
+	Présenter les résultats obtenus, comparer les résultats obtenus, si on a des différences...  
+-> On va parler d'autres modèles, par exemple le RBF (RBF + LLoyd). (barême de notation)
+	Commencer à nous approprier le projet. De part le dataset, puis avec le modèle... (réseaux art, artmap) -> Rendre un rapport bien plus détaillé que la présentation. 
+Possibilité de le faire avec matematica sur tout ce que l'on fait là. (manière historique, formel, les difficultés, mise en oeuvre pour les erreurs...)

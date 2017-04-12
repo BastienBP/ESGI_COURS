@@ -1,0 +1,15 @@
+Session #1 Présentation du modèle Cloud et des offres Fournissuers - Évolution des métiers IT: 
+
+Le terme "cloud computing" ou "cloud" cache de fait deux réalités distinctes: 
+- La dimension d'architecture technique; pour faire simple, la pholosophie technique du Mainframe mais avec des technologies "modernes"
+- La dimension usage & business: réactivité, agilité, mesure, facturation à l'usage, charge vs investissement
+
+-> Facturation à l'usage + charge plutot qu'investissement (location de services) sont les raisons clées du cloud. 
+
+IaaS (infrastructure), PaaS (plateform), SaaS (software)
+
+Cloud Public, Privé & Hybride:
+
+Exemple de cloud privé: Openstack, Azure Stack
+
+
