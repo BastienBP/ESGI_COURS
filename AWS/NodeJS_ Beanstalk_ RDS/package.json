@@ -1,0 +1,10 @@
+{
+  "name": "AWSIBD",
+  "version": "1.0.0",
+  "private": true,
+  "main": "app.js",
+  "dependencies": {
+  	"express": "*",
+  	"mysql": "latest"
+  }
+}

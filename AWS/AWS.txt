@@ -1,0 +1,16 @@
+-> Elastic BeanStalk: 
+
+- Configuration: auto scalling, machine sur lesquelles développer, etc. 
+- Journaux: ce sont les logs
+- Santé: présentation de l'état des requête sur le serveur
+- Surveillance: Environnement Health, CPU utilisation, Max network in, Max network out. 
+- Alarm: déclenchement d'alerte sur les composants du cluster
+- Evenement: gestion des évènements 
+- Balise: nom des machines, etc. 
+
+Déploiment: 
+1° Archiver le code et le json en .ZIP
+2° Sur environnement Elastic Bearnstack => "Charger et déployer" => Choisir l'archive => remplir étiquette de version => "Lancer"
+3° Service -> rds -> mysql -> Dev/ Test (MySQL) -> remplir les noms, prendre une machine => id de 'linstance DB = aws-mysql-bbr / admin / mot de pass => next
+4° Sauvegarde: 
+5° Elastic BeanStalk -> Configuration des logiciels -> remplir les variables d'environnement

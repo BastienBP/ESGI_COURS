@@ -1,0 +1,42 @@
+o = 1+p => 1.operator+(p)??? NON!
+operator+(1,p) -> Fonction amie. 
+
+IV) Opérateurs spéciaux du c++: 
+
+-> cout/ cin : 
+
+int n = 15; 
+cout << n; <-- cout.operatior<<(n);
+
+x o;
+cout <<o;     <-- cout.operator<<(o); NON!
+		operator<<(cout,o);
+--------------------------------------
+
+ostream & operator<<(ostream & o, const Date & d)
+return o<<dt.d<<"/"<<dt.m<<"/"<<dt.y
+
+istream &operator >>(istream &i, Date & dt){
+	i >>dt.d;
+	i >>dt.m;
+	i >>dt.y;
+	return i;
+}
+
+class Date{
+	int d, m, y; 
+	friend ostream &operator<<(ostream & const Date &);
+	friend istream & operator >> istream &, Date &);
+}
+
+* conversion:
+
+ex:     Date d; 
+	int n = 15;
+n = d    =>  n=(int)d       |     d = n  => d = 15 => d.operator=(n)         => d = n => d = Date(n)
+=> class Date{
+	operator int(){
+	return m; 
+} 
+}
+
