@@ -40,3 +40,144 @@ n = d    =>  n=(int)d       |     d = n  => d = 15 => d.operator=(n)         => 
 } 
 }
 
+HERITAGE: 
+
+I) Mise en place: 
+
+Construction: 
+
+class X{
+};
+
+class Y: public X{
+// nouveautee
+};
+
+
+Ex:
+
+class Conposent{
+private: 
+	int x; 
+	int y; 
+public: 
+	// methodes classiques
+
+}
+
+class TextEdit: public Composent{
+private: 
+	string text; 
+public: 
+	string getText(); 	
+
+}
+
+Fabrication objet: 
+TextEdit edit; => valeur
+TextEdit *pEdit; => pointeur
+TextEdit &rEdit; => référence
+
+edit.getText(); 
+edit.setX(10);
+
+°Propriétés: 
+
+- Pouvoir affecter une dérivée à une base: BASE <- DERIVEE
+
+Component <- TextEdit => Fabrication de variable en valeur
+x		x
+_		_
+y		y
+_		_
+?	<-     Text  => ERROR!
+
+
+Component* <- TextEdit* => Sans pointeur, pas de polymorphisme. 
+Component& <- TextEdit&
+
+
+EXEMPLE avec operateur ==: 
+
+class Conposent{
+private:
+        int x;
+        int y;
+public:
+        bool operator==(const Component&c){
+	return x==c.x && y==c.y;
+	}
+
+}
+
+class TextEdit: public Composent{
+private:
+        string text;
+public:
+        string getText();
+
+}
+
+----------------------------
+class Conposent{
+private:
+        int x;
+        int y;
+public:
+	void print();       
+ }
+
+}
+
+class TextEdit: public Composent{
+private:
+        string text;
+public:
+	void print(){
+	Componnent::print();
+	cout<<text;
+	}
+}
+-----------------------
+class Conposent{
+private:
+        int x;
+        int y;
+public:
+	Component();
+	Component(int, int); 
+	Component(const Component&);
+ }
+
+}
+
+class TextEdit: public Composent{
+private:
+        string text;
+public:
+	TextEdit(string, int, int)	
+}
+
+
+
+
+-> C'est dans l'entête:
+
+TextEdit::TextEdit(string text, int y, int y):Component(x,y){
+	
+}
+
+TextEdit::TextEdit(const TextEdit &edit):Component(edit){
+	this->text = edit.text
+}
+
+
+II) Polymorphisme(* / &)
+
+Component * pcomp;
+
+pcomp = new TexEdit();
+
+pcomp->print() <= celle de la class component
+
+delete pcomp;

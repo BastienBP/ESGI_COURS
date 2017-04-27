@@ -1,0 +1,41 @@
+Spark:
+Spark = map reduce/ calcul distribué. Plus rapide qu'Hadoop. 
+
+Dans spark, on a: Spark SQL, Spark Streaming, Graph X, MLJB Spark
+
+Ex: On a des données dans un datalake. On le branche à Spark. 
+
+On exécute soit en :
+- Local => un échantillon, une seule VM. 
+- Distribué => gérer la distribution qui nous intéresse. (Avec Stand Alone ou alors YARN)
+
+Si données volumineuses, elles sont gardées en mémoire, ou recalculées en cas de pannes. 
+
+Kmeans: k-means clustering is a method of vector quantization
+
+Spark: chaque noeud renvoit un résultat à chaque itération: à chacune, on calcule la distance entre deux et on le stock en mémoire. On le compare au prochain. 
+
+voir schema 1
+
+Application: ensemble de traitement effectué par l'ensemble du code
+job: tous les traitements effectués sur les noeuds
+task: tous traitement unitaire sur un seul noeud
+
+4 API: 
+- Scala 
+- Python 
+- R
+- Java
+
+Le spark context est le point d'entrer dans spark. Il est déjà entré et configuré dans le spark-shell. 
+
+"from pyspark import SparkContext"
+
+RDD
+Resilient => Fichier / RDD / Donneés
+Distributed => 
+Datasets
+
+Transformation -> Créer un nouveau RDD. 
+
+
